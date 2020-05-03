@@ -37,3 +37,9 @@ Configured user credentials :
   * user password = password
   
 optional todo : OAuth or JWT implementation 
+
+## Testing
+
+SpringBootTest: integraton test are done for all
+
+todo: configuring in-memory db for tests
