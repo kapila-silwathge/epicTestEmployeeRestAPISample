@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import kapila.restapi.sample.bean.AuthenticationBean;
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("auth/api/v1")
 public class BasicAuthController {
 
-	@GetMapping(path = "/basicauth2")
+	@GetMapping(path = "/basicauth")
 	public AuthenticationBean basicauth() {
 		return new AuthenticationBean("You are authenticated");
 	}	

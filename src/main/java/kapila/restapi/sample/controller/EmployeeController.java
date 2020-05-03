@@ -25,7 +25,7 @@ import kapila.restapi.sample.bean.AuthenticationBean;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("employee/api/v1")
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
@@ -71,9 +71,5 @@ public class EmployeeController {
 		Map<String, Boolean> response = new HashMap<>();
 		response.put("deleted", Boolean.TRUE);
 		return response;
-	}
-	@GetMapping(path = "/basicauth")
-	public AuthenticationBean basicauth() {
-		return new AuthenticationBean("You are authenticated");
-	}
+	}	
 }
